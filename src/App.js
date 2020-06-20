@@ -12,9 +12,7 @@ class App extends Component {
   state = { loggedIn: null };
 
     componentDidMount() {
-      
-
-          !firebase.apps.length
+        !firebase.apps.length
         ? firebase.initializeApp(firebaseConfig)
         : firebase.app()
 

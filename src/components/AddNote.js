@@ -32,7 +32,6 @@ class AddNote extends Component {
                     Cancel
                   </Button>
                 </CardSection>
-                
             </Card>
         )
     }

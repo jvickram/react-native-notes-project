@@ -8,6 +8,8 @@ const TextArea = ({label, value, onChangeText, placeholder, secureTextEntry}) =>
         <View style={containerStyle}>
             <TextInput 
             multiline
+            editable
+            inlineImageLeft='search_icon'
             numberOfLines={5}
             secureTextEntry={secureTextEntry}
             placeholder= {placeholder}

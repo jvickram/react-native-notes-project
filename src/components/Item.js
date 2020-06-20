@@ -14,7 +14,6 @@ class Item extends Component {
         return (
             <TouchableWithoutFeedback onPress={this.onRowPress.bind(this)}>
                 <View style={Styles.containerStyle}>
-                        {/* <Icon name='chevron-right' size={30} color="blue" style={Styles.iconStyle} /> */}
                     <CardSection>
                         <Icon name='edit' style={Styles.iconStyle} />
                         <Text style={Styles.titleStyle}>

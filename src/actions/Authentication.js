@@ -38,7 +38,6 @@ export const loginUser = ({ email, password }) => {
 }
 
 export const signupUser = ({ email, password }) => {
-    console.log('Creating user')
     return (dispatch) => {
         dispatch({ type: SIGNUP_USER})
          firebase.auth().createUserWithEmailAndPassword(email, password)
@@ -58,12 +57,10 @@ const loginUserSuccess = (dispatch, user) => {
         type: LOGIN_USER_SUCCESS,
         payload: user
     })
-    console.log('Login success, routing to Notes page')
     Actions.main()
 }
 
 const signupUserFail = (dispatch, error) => { 
-    console.log('Signup failed due to ',error.code)
     dispatch({ 
         type: SIGNUP_USER_FAIL,
         payload: error.code
@@ -75,6 +72,5 @@ const signupUserSuccess = (dispatch, user) => {
         type: SIGNUP_USER_SUCCESS,
         payload: user
     })
-    console.log('Signup user success, routing to Notes page')
     Actions.main()
 }
