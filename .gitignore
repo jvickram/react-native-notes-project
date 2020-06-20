@@ -34,7 +34,8 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-src\components\config\firebaseConfig.js
+src/components/config
+
 
 # BUCK
 buck-out/
